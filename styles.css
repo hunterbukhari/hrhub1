@@ -5,14 +5,6 @@ header {
     text-align: center;  /* محاذاة الشعار في المنتصف */
 }
 
-nav {
-    display: flex;
-    justify-content: center; /* محاذاة قائمة التنقل في المنتصف */
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
-
 /* تنسيق الشعار مع خلفية مستقلة */
 .logo {
     padding: 10px;
@@ -25,11 +17,20 @@ nav {
     height: auto;
 }
 
-/* تنسيق القوائم بشكل أفقي */
+/* تنسيق قائمة التنقل */
+nav {
+    display: flex;
+    justify-content: center; /* محاذاة قائمة التنقل في المنتصف */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* تنسيق القوائم بشكل أفقي للكمبيوتر */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;  /* المسافة بين العناصر */
+    gap: 30px;  /* المسافة بين العناصر */
     direction: rtl;
     padding: 0;
     margin: 0;
@@ -43,7 +44,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;  /* تكبير حجم الخط في الكمبيوتر */
-    padding: 8px 12px;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
@@ -105,12 +106,15 @@ footer {
 /* التعديلات للأجهزة الصغيرة (الهاتف) */
 @media screen and (max-width: 768px) {
     nav ul {
-        gap: 8px;  /* تقليل المسافة بين العناصر في الهاتف */
+        gap: 10px;  /* تقليل المسافة بين العناصر في الهاتف */
+        flex-direction: column;  /* تغيير القائمة لتصبح عمودية في الهاتف */
+        padding: 0;
+        margin: 0;
     }
 
     nav ul li a {
-        font-size: 12px;  /* تصغير حجم الخط في الهاتف */
-        padding: 5px 8px;  /* تقليل المسافة داخل الروابط */
+        font-size: 14px;  /* تصغير حجم الخط في الهاتف */
+        padding: 8px 12px;  /* تقليل المسافة داخل الروابط */
     }
 
     h1, h2 {
