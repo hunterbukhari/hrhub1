@@ -101,7 +101,7 @@ footer {
 /* التعديلات للأجهزة الصغيرة (الهاتف) */
 @media screen and (max-width: 768px) {
     nav ul {
-        gap: 12px;  /* تقليل المسافة بين العناصر في الهاتف */
+        gap: 7px;  /* تقليل المسافة بين العناصر في الهاتف */
         flex-direction: row;  /* تغيير القائمة لتصبح عمودية في الهاتف */
         padding: 0;
         margin: 0;
@@ -109,7 +109,7 @@ footer {
     }
 
     nav ul li a {
-        font-size: 10px;  /* تصغير حجم الخط في الهاتف */
+        font-size: 7px;  /* تصغير حجم الخط في الهاتف */
         padding: 8px 12px;
     }
 
