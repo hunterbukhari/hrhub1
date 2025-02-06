@@ -64,7 +64,7 @@ nav ul li a:hover {
     }
 
     nav ul {
-        display: none;
+        display: none; /* إخفاء القائمة افتراضيًا */
         flex-direction: column !important;
         gap: 10px !important;
         position: absolute;
@@ -77,7 +77,7 @@ nav ul li a:hover {
     }
 
     nav ul.active {
-        display: flex !important;
+        display: flex !important; /* إظهار القائمة عند الضغط على الزر */
     }
 }
 
