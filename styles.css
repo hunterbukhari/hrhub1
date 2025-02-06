@@ -102,9 +102,10 @@ footer {
 @media screen and (max-width: 768px) {
     nav ul {
         gap: 15px;  /* تقليل المسافة بين العناصر في الهاتف */
-        flex-direction: column;  /* تغيير القائمة لتصبح عمودية في الهاتف */
+        flex-direction: row;  /* تغيير القائمة لتصبح عمودية في الهاتف */
         padding: 0;
         margin: 0;
+        justify-content: center; /* محاذاة العناصر في المنتصف */
     }
 
     nav ul li a {
