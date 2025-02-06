@@ -27,7 +27,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px;  /* تقليل المسافة بين العناصر أكثر */
+    gap: 15px;  /* المسافة بين العناصر في الكمبيوتر */
     direction: rtl;
     padding: 0;
     margin: 0;
@@ -40,8 +40,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 12px;  /* تقليل حجم الخط بشكل أكبر */
-    padding: 4px 8px;  /* تقليل المسافة داخل الروابط */
+    font-size: 16px;  /* حجم الخط في الكمبيوتر */
+    padding: 8px 12px;
 }
 
 nav ul li a:hover {
@@ -57,7 +57,7 @@ section {
 h1, h2 {
     text-align: right;
     color: #333;
-    font-size: 22px;  /* تقليل حجم العناوين أكثر */
+    font-size: 26px;  /* حجم العناوين في الكمبيوتر */
 }
 
 .service {
@@ -69,7 +69,7 @@ h1, h2 {
 
 .service h3 {
     color: #555;
-    font-size: 16px;  /* تقليل حجم خط العنوان في الخدمات */
+    font-size: 20px;  /* حجم خط العنوان في الخدمات */
 }
 
 /* تنسيق النموذج */
@@ -100,22 +100,49 @@ footer {
     color: white;
 }
 
-@media screen and (max-width: 480px) {
-    form button {
-        padding: 15px 20px;
-        font-size: 16px;  /* تقليل حجم الخط في الأزرار */
+/* التعديلات للأجهزة الصغيرة (الهاتف) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        gap: 8px;  /* تقليل المسافة بين العناصر في الهاتف */
+    }
+
+    nav ul li a {
+        font-size: 14px;  /* تقليل حجم الخط في الهاتف */
+        padding: 6px 10px;  /* تقليل المسافة داخل الروابط */
     }
 
     h1, h2 {
-        font-size: 20px;  /* تقليل حجم العناوين في الأجهزة الصغيرة */
+        font-size: 22px;  /* تقليل حجم العناوين في الهاتف */
     }
 
-    .service {
-        padding: 10px;
+    .service h3 {
+        font-size: 18px;  /* تقليل حجم خط العنوان في الخدمات */
     }
 
     form input, form textarea {
-        padding: 12px;
-        font-size: 12px;  /* تقليل حجم الخط في الحقول */
+        font-size: 12px;  /* تقليل حجم الخط داخل الحقول في الهاتف */
+    }
+
+    form button {
+        font-size: 16px;  /* تقليل حجم الأزرار في الهاتف */
+    }
+}
+
+/* التعديلات للأجهزة الأصغر من 480px */
+@media screen and (max-width: 480px) {
+    h1, h2 {
+        font-size: 20px;  /* تقليل حجم العناوين أكثر في الأجهزة الصغيرة */
+    }
+
+    form button {
+        font-size: 14px;  /* تقليل حجم الأزرار في الأجهزة الصغيرة */
+    }
+
+    .service h3 {
+        font-size: 16px;  /* تقليل حجم خط العنوان في الخدمات */
+    }
+
+    form input, form textarea {
+        font-size: 12px;  /* تقليل حجم الخط داخل الحقول في الأجهزة الصغيرة */
     }
 }
