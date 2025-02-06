@@ -27,21 +27,21 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;  /* تقليل المسافة بين العناصر */
     direction: rtl;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    display: inline-block;  /* جعل العناصر تظهر بجانب بعضها */
+    display: inline-block;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 16px;  /* تقليل حجم الخط */
+    padding: 8px 12px;  /* تقليل المسافة داخل الروابط */
 }
 
 nav ul li a:hover {
@@ -57,7 +57,7 @@ section {
 h1, h2 {
     text-align: right;
     color: #333;
-    font-size: 30px;
+    font-size: 26px;  /* تصغير حجم العناوين */
 }
 
 .service {
@@ -69,6 +69,7 @@ h1, h2 {
 
 .service h3 {
     color: #555;
+    font-size: 20px;  /* تقليل حجم خط العنوان في الخدمات */
 }
 
 /* تنسيق النموذج */
