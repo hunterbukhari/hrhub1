@@ -27,7 +27,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;  /* تقليل المسافة بين العناصر */
+    gap: 10px;  /* تقليل المسافة بين العناصر أكثر */
     direction: rtl;
     padding: 0;
     margin: 0;
@@ -40,8 +40,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;  /* تقليل حجم الخط */
-    padding: 8px 12px;  /* تقليل المسافة داخل الروابط */
+    font-size: 12px;  /* تقليل حجم الخط بشكل أكبر */
+    padding: 4px 8px;  /* تقليل المسافة داخل الروابط */
 }
 
 nav ul li a:hover {
@@ -57,7 +57,7 @@ section {
 h1, h2 {
     text-align: right;
     color: #333;
-    font-size: 26px;  /* تصغير حجم العناوين */
+    font-size: 22px;  /* تقليل حجم العناوين أكثر */
 }
 
 .service {
@@ -69,7 +69,7 @@ h1, h2 {
 
 .service h3 {
     color: #555;
-    font-size: 20px;  /* تقليل حجم خط العنوان في الخدمات */
+    font-size: 16px;  /* تقليل حجم خط العنوان في الخدمات */
 }
 
 /* تنسيق النموذج */
@@ -103,11 +103,11 @@ footer {
 @media screen and (max-width: 480px) {
     form button {
         padding: 15px 20px;
-        font-size: 18px;
+        font-size: 16px;  /* تقليل حجم الخط في الأزرار */
     }
 
     h1, h2 {
-        font-size: 24px;
+        font-size: 20px;  /* تقليل حجم العناوين في الأجهزة الصغيرة */
     }
 
     .service {
@@ -116,6 +116,6 @@ footer {
 
     form input, form textarea {
         padding: 12px;
-        font-size: 14px;
+        font-size: 12px;  /* تقليل حجم الخط في الحقول */
     }
 }
