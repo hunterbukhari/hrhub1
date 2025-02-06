@@ -1,15 +1,14 @@
-/* تنسيق شريط التنقل */
+/* تنسيق الشريط العلوي */
 header {
     background-color: #333;
-    padding: 20px 10px; /* زيادة المسافة حول الشعار */
+    padding: 20px 10px; /* مسافة إضافية حول الشعار */
     text-align: center;  /* محاذاة الشعار في المنتصف */
 }
 
-/* تنسيق الشعار مع خلفية مستقلة */
+/* تنسيق الشعار */
 .logo {
     padding: 10px;
     border-radius: 8px;
-    text-align: center; /* محاذاة الشعار في المنتصف */
 }
 
 #logo {
@@ -26,7 +25,7 @@ nav {
     position: relative;
 }
 
-/* تنسيق القوائم بشكل أفقي للكمبيوتر */
+/* تنسيق القوائم في الكمبيوتر */
 nav ul {
     list-style: none;
     display: flex;
@@ -43,7 +42,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;  /* تكبير حجم الخط في الكمبيوتر */
+    font-size: 22px;  /* تكبير حجم الخط في الكمبيوتر */
     padding: 10px 15px;
 }
 
@@ -106,7 +105,7 @@ footer {
 /* التعديلات للأجهزة الصغيرة (الهاتف) */
 @media screen and (max-width: 768px) {
     nav ul {
-        gap: 10px;  /* تقليل المسافة بين العناصر في الهاتف */
+        gap: 15px;  /* تقليل المسافة بين العناصر في الهاتف */
         flex-direction: column;  /* تغيير القائمة لتصبح عمودية في الهاتف */
         padding: 0;
         margin: 0;
