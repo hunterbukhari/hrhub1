@@ -1,13 +1,15 @@
 /* تنسيق شريط التنقل */
 header {
     background-color: #333;
-    padding: 10px;
+    padding: 20px 10px; /* زيادة المسافة حول الشعار */
+    text-align: center;  /* محاذاة الشعار في المنتصف */
 }
 
 nav {
     display: flex;
+    justify-content: center; /* محاذاة قائمة التنقل في المنتصف */
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
     position: relative;
 }
 
@@ -15,7 +17,7 @@ nav {
 .logo {
     padding: 10px;
     border-radius: 8px;
-    text-align: left;
+    text-align: center; /* محاذاة الشعار في المنتصف */
 }
 
 #logo {
@@ -27,7 +29,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;  /* المسافة بين العناصر في الكمبيوتر */
+    gap: 15px;  /* المسافة بين العناصر */
     direction: rtl;
     padding: 0;
     margin: 0;
