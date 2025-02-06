@@ -40,7 +40,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;  /* حجم الخط في الكمبيوتر */
+    font-size: 18px;  /* تكبير حجم الخط في الكمبيوتر */
     padding: 8px 12px;
 }
 
@@ -107,8 +107,8 @@ footer {
     }
 
     nav ul li a {
-        font-size: 14px;  /* تقليل حجم الخط في الهاتف */
-        padding: 6px 10px;  /* تقليل المسافة داخل الروابط */
+        font-size: 12px;  /* تصغير حجم الخط في الهاتف */
+        padding: 5px 8px;  /* تقليل المسافة داخل الروابط */
     }
 
     h1, h2 {
@@ -124,7 +124,7 @@ footer {
     }
 
     form button {
-        font-size: 16px;  /* تقليل حجم الأزرار في الهاتف */
+        font-size: 14px;  /* تقليل حجم الأزرار في الهاتف */
     }
 }
 
@@ -135,7 +135,7 @@ footer {
     }
 
     form button {
-        font-size: 14px;  /* تقليل حجم الأزرار في الأجهزة الصغيرة */
+        font-size: 12px;  /* تقليل حجم الأزرار في الأجهزة الصغيرة */
     }
 
     .service h3 {
