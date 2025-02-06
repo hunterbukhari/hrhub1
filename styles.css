@@ -123,15 +123,6 @@ form button:hover {
     margin-bottom: 20px;
 }
 
-.contact-info a {
-    color: #007bff;  /* يمكنك تغيير اللون حسب اختيارك */
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
 .contact-details p {
     font-size: 18px;
     color: #555;
@@ -217,7 +208,6 @@ footer {
     .social-media ul li a {
         font-size: 16px;
     }
-
 }
 
 /* التعديلات للأجهزة الأصغر من 480px */
