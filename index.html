@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- شريط التنقل -->
     <header>
         <nav>
             <div class="logo">
@@ -25,13 +24,11 @@
         </nav>
     </header>
 
-    <!-- قسم التعريف -->
     <section id="home">
         <h1>مرحبًا بكم في HR Hub</h1>
         <p>حلول مبتكرة لإدارة الموارد البشرية والشؤون الحكومية عن بُعد.</p>
     </section>
 
-    <!-- قسم الخدمات -->
     <section id="services">
         <h2>خدماتنا</h2>
         <div class="service">
@@ -48,33 +45,28 @@
         </div>
     </section>
 
-    <!-- قسم الاتصال -->
     <section id="contact">
         <h2>تواصل معنا</h2>
         <form action="https://formspree.io/f/xovjlqpj" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="الاسم الكامل" required>
             <input type="email" name="email" placeholder="البريد الإلكتروني" required>
             <textarea name="message" placeholder="رسالتك" required></textarea>
-
-            <!-- حقل رفع المرفق -->
             <label for="attachment">إرفاق ملف:</label>
             <input type="file" name="attachment" id="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
-
             <button type="submit">إرسال</button>
         </form>
     </section>
 
-    <!-- التذييل -->
     <footer>
         <p>&copy; 2025 HR Hub جميع الحقوق محفوظة لـ </p>
     </footer>
 
-    <!-- سكريبت القائمة المنسدلة للجوال -->
     <script>
         function toggleMenu() {
-            const navLinks = document.querySelector(".nav-links");
-            navLinks.classList.toggle("active");
+            var menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
         }
     </script>
+
 </body>
 </html>
