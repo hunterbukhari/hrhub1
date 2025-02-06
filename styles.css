@@ -109,7 +109,7 @@ footer {
     }
 
     nav ul li a {
-        font-size: 7px;  /* تصغير حجم الخط في الهاتف */
+        font-size: 15px;  /* تصغير حجم الخط في الهاتف */
         padding: 8px 12px;
     }
 
@@ -146,5 +146,13 @@ footer {
 
     form input, form textarea {
         font-size: 12px;  /* تقليل حجم الخط داخل الحقول في الأجهزة الصغيرة */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* تقليل حجم الخط في الهاتف الصغير */
+    }
+
+    nav ul {
+        gap: 5px; /* تقليل المسافة بين العناصر في الأجهزة الصغيرة */
     }
 }
