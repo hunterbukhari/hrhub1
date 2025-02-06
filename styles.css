@@ -1,152 +1,120 @@
 /* تنسيق شريط التنقل */
 header {
     background-color: #333;
-    padding: 10px !important;
+    padding: 10px;
 }
 
 nav {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
 /* تنسيق الشعار مع خلفية مستقلة */
 .logo {
-    padding: 10px !important;
-    border-radius: 8px !important;
-    text-align: left !important;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
 }
 
 #logo {
-    width: 100px !important;
-    height: auto !important;
+    width: 100px;
+    height: auto;
 }
 
-/* تنسيق زر القائمة في الجوال */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* تنسيق القوائم */
+/* تنسيق القوائم بشكل أفقي */
 nav ul {
     list-style: none;
-    display: flex !important;
-    gap: 20px !important;
-    direction: rtl !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    display: flex;
+    gap: 20px;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline !important;
+    display: inline-block;  /* جعل العناصر تظهر بجانب بعضها */
 }
 
 nav ul li a {
-    color: white !important;
-    text-decoration: none !important;
-    font-size: 18px !important;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline !important;
-}
-
-/* تنسيق القائمة المنسدلة للجوال */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none; /* إخفاء القائمة افتراضيًا */
-        flex-direction: column !important;
-        gap: 10px !important;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul.active {
-        display: flex !important; /* إظهار القائمة عند الضغط على الزر */
-    }
+    text-decoration: underline;
 }
 
 /* تنسيق الأقسام */
 section {
-    padding: 40px !important;
-    direction: rtl !important;
+    padding: 40px;
+    direction: rtl;
 }
 
 h1, h2 {
-    text-align: right !important;
-    color: #333 !important;
-    font-size: 30px !important;
+    text-align: right;
+    color: #333;
+    font-size: 30px;
 }
 
 .service {
-    margin: 20px !important;
-    padding: 20px !important;
-    background-color: #f9f9f9 !important;
-    border-radius: 8px !important;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
 .service h3 {
-    color: #555 !important;
+    color: #555;
 }
 
 /* تنسيق النموذج */
 form input, form textarea, form button {
-    width: 100% !important;
-    padding: 10px !important;
-    margin: 10px 0 !important;
-    border-radius: 5px !important;
-    border: 1px solid #ccc !important;
-    text-align: right !important;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: right;
 }
 
 form button {
-    background-color: #333 !important;
-    color: white !important;
-    cursor: pointer !important;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
 }
 
 form button:hover {
-    background-color: #555 !important;
+    background-color: #555;
 }
 
 /* تنسيق التذييل */
 footer {
-    text-align: center !important;
-    padding: 20px !important;
-    background-color: #333 !important;
-    color: white !important;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
 @media screen and (max-width: 480px) {
     form button {
-        padding: 15px 20px !important;
-        font-size: 18px !important;
+        padding: 15px 20px;
+        font-size: 18px;
     }
 
     h1, h2 {
-        font-size: 24px !important;
+        font-size: 24px;
     }
 
     .service {
-        padding: 10px !important;
+        padding: 10px;
     }
 
     form input, form textarea {
-        padding: 12px !important;
-        font-size: 14px !important;
+        padding: 12px;
+        font-size: 14px;
     }
 }
