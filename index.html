@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR Hub - إدارة الموارد البشرية والشؤون الحكومية</title>
-    <!-- ربط ملف CSS الخارجي -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +14,8 @@
             <div class="logo">
                 <img src="logo.png" alt="HR Hub Logo" id="logo">
             </div>
-            <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#about">عن HR Hub</a></li>
                 <li><a href="#services">الخدمات</a></li>
@@ -49,26 +49,32 @@
     </section>
 
     <!-- قسم الاتصال -->
-<!-- قسم الاتصال -->
-<section id="contact">
-    <h2>تواصل معنا</h2>
-    <form action="https://formspree.io/f/xovjlqpj" method="post" enctype="multipart/form-data">
-        <input type="text" name="name" placeholder="الاسم الكامل" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <textarea name="message" placeholder="رسالتك" required></textarea>
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <form action="https://formspree.io/f/xovjlqpj" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="الاسم الكامل" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <textarea name="message" placeholder="رسالتك" required></textarea>
 
-        <!-- حقل رفع المرفق -->
-        <label for="attachment">إرفاق ملف:</label>
-        <input type="file" name="attachment" id="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
+            <!-- حقل رفع المرفق -->
+            <label for="attachment">إرفاق ملف:</label>
+            <input type="file" name="attachment" id="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
 
-        <button type="submit">إرسال</button>
-    </form>
-</section>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
 
     <!-- التذييل -->
     <footer>
         <p>&copy; 2025 HR Hub جميع الحقوق محفوظة لـ </p>
     </footer>
 
+    <!-- سكريبت القائمة المنسدلة للجوال -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
