@@ -1,7 +1,7 @@
 /* تنسيق الشريط العلوي */
 header {
     background-color: #333;
-    padding: 20px 10px; /* مسافة إضافية حول الشعار */
+    padding: 20px 10px;
     text-align: center;  /* محاذاة الشعار في المنتصف */
 }
 
@@ -18,21 +18,17 @@ header {
 
 /* تنسيق قائمة التنقل */
 nav {
-    display: flex;
-    justify-content: center; /* محاذاة قائمة التنقل في المنتصف */
-    align-items: center;
-    width: 100%;
-    position: relative;
+    margin-top: 10px;
 }
 
-/* تنسيق القوائم في الكمبيوتر */
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;  /* محاذاة قائمة التنقل في المنتصف */
     gap: 30px;  /* المسافة بين العناصر */
-    direction: rtl;
     padding: 0;
     margin: 0;
+    direction: rtl;  /* الاتجاه من اليمين لليسار */
 }
 
 nav ul li {
@@ -42,7 +38,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 22px;  /* تكبير حجم الخط في الكمبيوتر */
+    font-size: 22px;  /* حجم الخط في الكمبيوتر */
     padding: 10px 15px;
 }
 
@@ -113,7 +109,7 @@ footer {
 
     nav ul li a {
         font-size: 14px;  /* تصغير حجم الخط في الهاتف */
-        padding: 8px 12px;  /* تقليل المسافة داخل الروابط */
+        padding: 8px 12px;
     }
 
     h1, h2 {
