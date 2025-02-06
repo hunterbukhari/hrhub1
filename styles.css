@@ -58,19 +58,39 @@ h1, h2 {
     font-size: 26px;  /* حجم العناوين في الكمبيوتر */
 }
 
-.service {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.service h3 {
+/* تنسيق قسم "من نحن؟" */
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
     color: #555;
-    font-size: 20px;  /* حجم خط العنوان في الخدمات */
 }
 
-/* تنسيق النموذج */
+/* تنسيق قسم "الرؤية" */
+#vision p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* تنسيق قسم "الخدمات" */
+#services h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 30px;
+}
+
+#services ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#services ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* تنسيق قسم "تواصل معنا" */
 form input, form textarea, form button {
     width: 100%;
     padding: 10px;
@@ -117,8 +137,8 @@ footer {
         font-size: 22px;  /* تقليل حجم العناوين في الهاتف */
     }
 
-    .service h3 {
-        font-size: 18px;  /* تقليل حجم خط العنوان في الخدمات */
+    #about p, #vision p, #services ul li {
+        font-size: 15px;  /* تقليل حجم الخط في الفقرات في الهاتف */
     }
 
     form input, form textarea {
@@ -140,12 +160,12 @@ footer {
         font-size: 12px;  /* تقليل حجم الأزرار في الأجهزة الصغيرة */
     }
 
-    .service h3 {
-        font-size: 16px;  /* تقليل حجم خط العنوان في الخدمات */
+    #services h3 {
+        font-size: 18px;  /* تقليل حجم خط العنوان في الخدمات */
     }
 
-    form input, form textarea {
-        font-size: 12px;  /* تقليل حجم الخط داخل الحقول في الأجهزة الصغيرة */
+    #about p, #vision p, #services ul li {
+        font-size: 12px;  /* تقليل حجم الخط في الفقرات في الأجهزة الصغيرة */
     }
 
     nav ul li a {
