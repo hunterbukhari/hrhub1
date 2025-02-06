@@ -1,0 +1,168 @@
+/* تنسيق شريط التنقل */
+header {
+    background-color: #333;
+    padding: 10px !important;
+}
+
+nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+/* تنسيق الشعار مع خلفية مستقلة */
+.logo {
+    padding: 10px !important;
+    border-radius: 8px !important;
+    text-align: left !important;
+}
+
+#logo {
+    width: 100px !important;
+    height: auto !important;
+}
+
+/* تنسيق القوائم */
+nav ul {
+    list-style: none;
+    display: flex !important;
+    gap: 20px !important;
+    direction: rtl !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav ul li {
+    display: inline !important;
+}
+
+nav ul li a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+}
+
+nav ul li a:hover {
+    text-decoration: underline !important;
+}
+
+/* تنسيق الأقسام */
+section {
+    padding: 40px !important;
+    direction: rtl !important;
+}
+
+h1, h2 {
+    text-align: right !important;
+    color: #333 !important;
+    font-size: 30px !important;
+}
+
+.service {
+    margin: 20px !important;
+    padding: 20px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: 8px !important;
+}
+
+.service h3 {
+    color: #555 !important;
+}
+
+/* تنسيق النموذج */
+form input, form textarea, form button {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+    text-align: right !important;
+}
+
+form button {
+    background-color: #333 !important;
+    color: white !important;
+    cursor: pointer !important;
+}
+
+form button:hover {
+    background-color: #555 !important;
+}
+
+/* تنسيق التذييل */
+footer {
+    text-align: center !important;
+    padding: 20px !important;
+    background-color: #333 !important;
+    color: white !important;
+}
+
+/* Media Queries لتصميم الهاتف */
+@media screen and (max-width: 768px) {
+    .logo {
+        text-align: center !important; 
+    }
+
+    nav {
+        flex-direction: column !important;
+        align-items: center !important; 
+    }
+
+    nav ul {
+        flex-direction: column !important;
+        gap: 10px !important;
+        align-items: center !important;
+    }
+
+    nav ul li {
+        display: block !important;
+    }
+
+    nav ul li a {
+        font-size: 16px !important;
+        text-align: center !important;
+    }
+
+    section {
+        padding: 20px !important;
+    }
+
+    h1, h2 {
+        font-size: 26px !important;
+    }
+
+    .service {
+        margin: 15px 0 !important;
+        padding: 15px !important;
+        font-size: 18px !important;
+    }
+
+    form input, form textarea, form button {
+        padding: 15px !important;
+        font-size: 16px !important;
+    }
+
+    footer {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form button {
+        padding: 15px 20px !important;
+        font-size: 18px !important;
+    }
+
+    h1, h2 {
+        font-size: 24px !important;
+    }
+
+    .service {
+        padding: 10px !important;
+    }
+
+    form input, form textarea {
+        padding: 12px !important;
+        font-size: 14px !important;
+    }
+}
