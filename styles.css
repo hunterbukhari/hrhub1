@@ -2,7 +2,7 @@
 header {
     background-color: #333;
     padding: 20px 10px;
-    text-align: center;  /* محاذاة الشعار في المنتصف */
+    text-align: center;
 }
 
 /* تنسيق الشعار */
@@ -12,7 +12,7 @@ header {
 }
 
 #logo {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -24,11 +24,11 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;  /* محاذاة قائمة التنقل في المنتصف */
-    gap: 60px;  /* المسافة بين العناصر */
+    justify-content: center;
+    gap: 60px;
     padding: 0;
     margin: 0;
-    direction: rtl;  /* الاتجاه من اليمين لليسار */
+    direction: rtl;
 }
 
 nav ul li {
@@ -38,7 +38,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 26px;  /* حجم الخط في الكمبيوتر */
+    font-size: 26px;
     padding: 10px 15px;
 }
 
@@ -55,7 +55,7 @@ section {
 h1, h2 {
     text-align: right;
     color: #333;
-    font-size: 26px;  /* حجم العناوين في الكمبيوتر */
+    font-size: 26px;
 }
 
 /* تنسيق قسم "من نحن؟" */
@@ -162,35 +162,83 @@ footer {
     color: white;
 }
 
+/* تنسيق بنر الصور المتحركة */
+#banner {
+    position: relative;
+    width: 100%;  /* تأكد من أن البنر يمتد بالكامل */
+    max-width: 1090px; /* تحديد أقصى عرض للبنر */
+    height: 250px; /* تحديد ارتفاع البنر */
+    overflow: hidden;  /* إخفاء أي جزء من الصور التي تتجاوز الحدود */
+    margin: 0 auto;  /* محاذاة البنر في المنتصف */
+}
+
+.banner-wrapper {
+    display: flex;  /* استخدام Flexbox لترتيب الصور بجانب بعضها */
+    width: 300%; /* عرض المساحة 3 مرات (لكل صورة) */
+    transition: transform 1s ease-in-out;  /* انتقال سلس عند التغيير */
+}
+
+.banner-images {
+    width: 33.33%;  /* كل صورة تأخذ ثلث المساحة داخل .banner-wrapper */
+    height: 100%;
+    flex-shrink: 0;  /* منع الصور من التقلص */
+}
+
+.banner-images img {
+    width: 100%;  /* كل صورة تأخذ 100% من المساحة المتاحة داخل .banner-images */
+    height: 100%;  /* ملء ارتفاع العنصر */
+    object-fit: cover;  /* تغطية المساحة بالكامل */
+}
+
+/* الأسهم */
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
 /* التعديلات للأجهزة الصغيرة (الهاتف) */
 @media screen and (max-width: 768px) {
     nav ul {
-        gap: 7px;  /* تقليل المسافة بين العناصر في الهاتف */
-        flex-direction: row;  /* تغيير القائمة لتصبح عمودية في الهاتف */
-        padding: 0;
-        margin: 0;
-        justify-content: center; /* محاذاة العناصر في المنتصف */
+        gap: 7px;
+        flex-direction: row;
+        justify-content: center;
     }
 
     nav ul li a {
-        font-size: 8px;  /* تصغير حجم الخط في الهاتف */
+        font-size: 8px;
         padding: 8px 12px;
     }
 
     h1, h2 {
-        font-size: 22px;  /* تقليل حجم العناوين في الهاتف */
+        font-size: 22px;
     }
 
     #about p, #vision p, #services ul li {
-        font-size: 15px;  /* تقليل حجم الخط في الفقرات في الهاتف */
+        font-size: 15px;
     }
 
     form input, form textarea {
-        font-size: 12px;  /* تقليل حجم الخط داخل الحقول في الهاتف */
+        font-size: 12px;
     }
 
     form button {
-        font-size: 14px;  /* تقليل حجم الأزرار في الهاتف */
+        font-size: 14px;
     }
 
     #contact-info h2 {
@@ -213,26 +261,10 @@ footer {
 /* التعديلات للأجهزة الأصغر من 480px */
 @media screen and (max-width: 480px) {
     h1, h2 {
-        font-size: 20px;  /* تقليل حجم العناوين أكثر في الأجهزة الصغيرة */
+        font-size: 20px;
     }
 
     form button {
-        font-size: 12px;  /* تقليل حجم الأزرار في الأجهزة الصغيرة */
-    }
-
-    #services h3 {
-        font-size: 18px;  /* تقليل حجم خط العنوان في الخدمات */
-    }
-
-    #about p, #vision p, #services ul li {
-        font-size: 12px;  /* تقليل حجم الخط في الفقرات في الأجهزة الصغيرة */
-    }
-
-    nav ul li a {
-        font-size: 12px; /* تقليل حجم الخط في الهاتف الصغير */
-    }
-
-    nav ul {
-        gap: 5px; /* تقليل المسافة بين العناصر في الأجهزة الصغيرة */
+        font-size: 14px;
     }
 }
