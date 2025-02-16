@@ -1,3 +1,20 @@
+/* تطبيق الخط على جميع العناصر */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cairo', sans-serif;
+}
+
+nav ul li a {
+    font-family: 'Cairo', sans-serif;
+}
+
+p {
+    font-family: 'Cairo', sans-serif;
+}
+
 /* تنسيق الشريط العلوي */
 header {
     background-color: #0077b6;
